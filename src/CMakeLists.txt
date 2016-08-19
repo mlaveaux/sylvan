@@ -13,6 +13,7 @@ set(SOURCES
     sylvan_sl.c
     sylvan_stats.c
     sylvan_table.c
+    sylvan_zdd.c
 )
 
 set(HEADERS
@@ -33,6 +34,8 @@ set(HEADERS
     sylvan_stats.h
     sylvan_table.h
     sylvan_tls.h
+    sylvan_zdd.h
+    sylvan_zdd_int.h
 )
 
 option(BUILD_SHARED_LIBS "Enable/disable creation of shared libraries" ON)
