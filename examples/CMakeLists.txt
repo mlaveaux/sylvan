@@ -15,6 +15,9 @@ target_link_libraries(nqueens sylvan)
 add_executable(simple simple.cpp)
 target_link_libraries(simple sylvan stdc++)
 
+add_executable(satdd satdd.c)
+target_link_librarieS(satdd sylvan)
+
 include(CheckIncludeFiles)
 check_include_files("gperftools/profiler.h" HAVE_PROFILER)
 
@@ -35,6 +38,7 @@ if (${CMAKE_SYSTEM_NAME} MATCHES "Darwin")
     target_link_libraries(lddmc argp)
     target_link_libraries(ldd2bdd argp)
     target_link_libraries(nqueens argp)
+    target_link_libraries(satdd argp)
 endif()
 
 
