@@ -18,6 +18,9 @@ target_link_libraries(simple sylvan stdc++)
 add_executable(satdd satdd.c)
 target_link_libraries(satdd sylvan)
 
+add_executable(satve satve.c getrss.c)
+target_link_libraries(satve sylvan)
+
 add_executable(dddrat dddrat.c)
 target_link_libraries(dddrat sylvan)
 
@@ -42,6 +45,7 @@ if (${CMAKE_SYSTEM_NAME} MATCHES "Darwin")
     target_link_libraries(ldd2bdd argp)
     target_link_libraries(nqueens argp)
     target_link_libraries(satdd argp)
+    target_link_libraries(satve argp)
     target_link_libraries(dddrat argp)
 endif()
 
