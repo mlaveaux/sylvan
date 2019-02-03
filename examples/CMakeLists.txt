@@ -15,6 +15,9 @@ target_link_libraries(nqueens sylvan)
 add_executable(simple simple.cpp)
 target_link_libraries(simple sylvan stdc++)
 
+add_executable(aigsynt aigsynt.cpp)
+target_link_libraries(aigsynt sylvan)
+
 # Check if we have Meddly
 find_library(MEDDLY_FOUND meddly)
 if(MEDDLY_FOUND)
@@ -51,6 +54,7 @@ if (${CMAKE_SYSTEM_NAME} MATCHES "Darwin")
     endif()
     target_link_libraries(ldd2bdd argp)
     target_link_libraries(nqueens argp)
+    target_link_libraries(aagsynt argp)
 endif()
 
 
